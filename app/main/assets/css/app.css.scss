@@ -1,0 +1,54 @@
+body {
+  font-family: Avenir, sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+
+textarea {
+  height: 140px;
+  width: 100%;
+}
+
+.nice-buttons {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+.destroy-button {
+  float: right;
+}
+
+.todo-table {
+  width: 100%;
+  font-size: 1.3em;
+
+
+  tr {
+    &.selected td {
+      background-color: #428bca;
+      color: white;
+
+      button {
+        color: black;
+      }
+    }
+
+    td {
+      padding: 5px;
+      border-top: 1px solid #EEEEEE;
+
+      &.complete {
+        text-decoration: line-through;
+        color: #CCCCCC;
+      }
+    }
+  }
+}
